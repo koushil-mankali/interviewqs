@@ -12,6 +12,7 @@
 2. About Promises.
 3. Async Await.
 4. Fetch API Call
+5. Flattent Objects or Objects without using inbuilt methods.
 
 ## Round 2
 
