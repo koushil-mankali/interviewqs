@@ -4,7 +4,7 @@
  * 2. About Promises. - Explained in words.
  * 3. Async Await. - Explained in words.
  * 4. Fetch API Call
- * 5. Flattent Objects or Objects without using inbuilt methods.
+ * 5. Flatten Objects or Objects without using inbuilt methods.
  *
  */
 
