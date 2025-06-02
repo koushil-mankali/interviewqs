@@ -16,4 +16,4 @@
 
 ## Round 2
 
-1. React Code for Auto laod data on scroll
+1. React Code for infinite scroll
