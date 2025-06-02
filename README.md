@@ -6,4 +6,5 @@ This repo is for keeping a book of questions asked in interviews.
 
 Companies Listed Till Now:
 
-1. Publicis Sepient.
+1. lloyds.
+2. Publicis Sepient.
