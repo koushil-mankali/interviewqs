@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eventBubblingCapturing</title>
+  </head>
+  <body>
+    <div
+      style="width: 80px; height: 150px; background-color: red"
+      id="grandparnet"
+    >
+      <div
+        style="width: 50px; height: 100px; background-color: pink"
+        id="parent"
+      >
+        <button id="btn">Button</button>
+      </div>
+    </div>
+    <script>
+      const grandParent = document.getElementById("grandparnet");
+      const parent = document.getElementById("parent");
+      const button = document.getElementById("btn");
+
+      const eventHandlerFuncGP = () => {
+        console.log("Grand Parent");
+      };
+      const eventHandlerFuncP = () => {
+        console.log("Parent");
+      };
+      const eventHandlerFuncC = () => {
+        console.log("Child");
+      };
+
+      grandParent?.addEventListener("click", eventHandlerFuncGP, true);
+      parent?.addEventListener("click", eventHandlerFuncP, true);
+      button?.addEventListener("click", eventHandlerFuncC, true);
+    </script>
+  </body>
+</html>

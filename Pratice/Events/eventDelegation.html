@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eventDelegation</title>
+  </head>
+  <body>
+    <h1>Event Delegation Example</h1>
+    <ul id="itemList">
+      <li id="item1">Item List 1</li>
+      <li id="item2">Item List 2</li>
+      <li id="item3">Item List 3</li>
+    </ul>
+
+    <script>
+      const itemListDOM = document.getElementById("itemList");
+
+      itemListDOM?.addEventListener("click", (e) => {
+        const targetElemet = e.target;
+        console.log("targetElemet id", targetElemet.id);
+        console.log("targetElemet value", targetElemet.innerText);
+        console.log("clicked", targetElemet?.value);
+      });
+    </script>
+  </body>
+</html>
